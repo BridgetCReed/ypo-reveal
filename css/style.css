@@ -95,10 +95,28 @@ image {
 .scroll-rail {
   width: 100%;
   max-width: 13%;
+  position: relative;
 }
 
 .scroll-rail svg {
   width: 100%;
+}
+
+.scroll-rail svg image.mobile {
+  display: none;
+}
+
+.scroll-rail svg image.desktop {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .scroll-rail svg image.desktop {
+    display: none;
+  }
+  .scroll-rail svg image.mobile {
+    display: block;
+  }
 }
 
 .overlay:hover circle, .overlay:hover image {

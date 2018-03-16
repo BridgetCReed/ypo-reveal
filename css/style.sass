@@ -79,9 +79,23 @@ image
 .scroll-rail
   width: 100%
   max-width: 13%
+  position: relative
   svg
     width: 100%
-      
+    image 
+      &.mobile
+        display: none
+      &.desktop
+        display: block
+
+@media (max-width: 800px)
+  .scroll-rail
+    svg
+      image 
+        &.desktop
+          display: none
+        &.mobile
+          display: block
 
 .overlay:hover
   circle, image
