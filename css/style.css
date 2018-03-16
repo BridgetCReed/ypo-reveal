@@ -75,16 +75,25 @@ image {
 
 .overlay {
   width: 100%;
-  max-width: 86.9%;
+  max-width: 87%;
+  position: relative;
 }
 
 .overlay svg {
   width: 100%;
 }
 
+.overlay a {
+  width: 50%;
+  height: 0;
+  padding: 65px;
+  position: absolute;
+  top: 73%;
+}
+
 .scroll-rail {
   width: 100%;
-  max-width: 13.1%;
+  max-width: 13%;
 }
 
 .scroll-rail svg {
@@ -94,5 +103,9 @@ image {
 .overlay:hover circle, .overlay:hover image {
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+
+td {
+  vertical-align: top;
 }
 /*# sourceMappingURL=style.css.map */
